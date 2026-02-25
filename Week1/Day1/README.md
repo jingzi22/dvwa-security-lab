@@ -11,9 +11,12 @@
 5. 验证成功跳转至 index.php
 
 ## 证据 (Evidence)
-- W1D1-DBReset-Success.png
-- W1D1-Login-Req-Low.png
-- W1D1-Login-Res-Home.png
+- W1D1-DBReset-Success.png<img width="1718" height="908" alt="W1D1-DBReset-Success" src="https://github.com/user-attachments/assets/ab3d3d6e-6914-4420-b2e0-e16cb2f26c90" />
+
+- W1D1-Login-Req-Low.png<img width="1718" height="908" alt="W1D1-Login-Req-Low" src="https://github.com/user-attachments/assets/5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" />
+
+- W1D1-Login-Res-Home.png<img width="1718" height="908" alt="W1D1-Login-Res-Home" src="https://github.com/user-attachments/assets/d6de3d3c-b003-4855-abe7-1cc19beb83aa" />
+
 
 ## 关键发现 (Key Findings)
 - 登录使用 POST 请求
