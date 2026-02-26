@@ -1,23 +1,26 @@
-# Week1 Day2 任务记录
+Week1 - Day2
+目标 (Objective)
+完成 Burp 代理配置，捕获注销（Logout）请求并验证注销后的页面状态。
 
-## Tue：Burp 代理跑通；抓「注销成功」
+操作步骤 (Steps)
+1. 配置浏览器代理指向 Burp Suite（默认 127.0.0.1:8080）
+2. 登录 DVWA 系统（admin/password）
+3. 开启 Burp 拦截功能
+4. 点击页面 Logout 按钮，捕获注销请求
+5. 关闭拦截，验证页面跳转至登录页/未登录提示
 
-### 任务目标
-- 确认 Burp 代理已正确配置并可正常拦截浏览器流量
-- 捕获用户注销（Logout）操作的 HTTP 请求
-- 验证注销后页面状态（回到登录页或提示未登录）
+证据 (Evidence)
+W1D2-Logout-Req.png
+<img width="1718" height="908" alt="0518b951e6a92cf5c0f550b8b341f967" src="https://github.com/user-attachments/assets/42d646ba-aa38-4c32-9ed5-eee8665f3883" />
 
-### 操作步骤
-1. 配置浏览器代理，指向 Burp Suite 监听端口（默认 127.0.0.1:8080）
-2. 登录 DVWA 系统
-3. 开启 Burp 拦截，点击页面上的「Logout」按钮
-4. 在 Burp 中查看并记录 Logout 请求详情
-5. 关闭拦截，让请求发送到服务器，观察浏览器返回的页面状态
+W1D2-Logout-Res.png
+<img width="1718" height="908" alt="023560b382200fe74eb9db1cc6222508" src="https://github.com/user-attachments/assets/08d4d871-478d-4236-9c13-fcd4950cf3d8" />
+关键发现 (Key Findings)
+注销请求多为 GET/POST 方式（视 DVWA 版本而定）
+注销后 Cookie 中的登录态失效
+响应状态码多为 200/302，页面跳转至登录页
 
-### 留痕
-
-#### ① Logout 请求 Req 截图
-<img width="1718" height="908" alt="0518b951e6a92cf5c0f550b8b341f967" src="https://github.com/user-attachments/assets/dbfa1053-f10f-4005-814d-b6bdc8e7b47c" />
-
-#### ② 浏览器退出后页面 Res 截图
-<img width="1718" height="908" alt="023560b382200fe74eb9db1cc6222508" src="https://github.com/user-attachments/assets/604264bd-d896-451b-a068-2b36ca225cb9" />
+待研究问题 (Questions)
+注销操作是否清除服务端 Session？
+不同 security 级别下注销逻辑是否有差异？
+Logout 请求是否存在 CSRF 防护机制？
