@@ -12,10 +12,10 @@
 
 ## 证据 (Evidence)
 - W1D3-Repeater-Req.png
-<img width="659" height="914" alt="1418c263-cb3b-4f1d-aa16-5918c27fe758" src="https://github.com/user-attachments/assets/81d71bb2-f2c2-4f90-98bc-4dce996c327b" />
+<img width="659" height="914" alt=" W1D3-Repeater-Req" src="https://github.com/user-attachments/assets/81d71bb2-f2c2-4f90-98bc-4dce996c327b" />
 
 - W1D3-Repeater-Res.png
-<img width="902" height="786" alt="31bae305-e4cd-48a7-ae55-64533ba4aeec" src="https://github.com/user-attachments/assets/74e81a8f-397b-4905-b753-07e49a3f16be" />
+<img width="902" height="786" alt="W1D3-Repeater-Res.png" src="https://github.com/user-attachments/assets/74e81a8f-397b-4905-b753-07e49a3f16be" />
 
 ## 关键发现 (Key Findings)
 - 修改 User-Agent 字段不影响已登录请求的有效性
