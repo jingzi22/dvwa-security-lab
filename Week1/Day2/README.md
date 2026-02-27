@@ -10,9 +10,9 @@ Week1 - Day2
 5. 关闭拦截，验证页面跳转至登录页/未登录提示
 
 ## 证据 (Evidence)
-- W1D2-Logout-Req.png <img width="1718" height="908" alt="0518b951e6a92cf5c0f550b8b341f967" src="https://github.com/user-attachments/assets/27e44433-59d2-40f9-a84d-abaf5e269941" />
+- W1D2-Logout-Req.png <img width="1718" height="908" alt="W1D2-Logout-Req" src="https://github.com/user-attachments/assets/27e44433-59d2-40f9-a84d-abaf5e269941" />
 
-- W1D2-Logout-Res.png <img width="1718" height="908" alt="023560b382200fe74eb9db1cc6222508" src="https://github.com/user-attachments/assets/7be67328-bb7d-414d-9d04-30729839199b" />
+- W1D2-Logout-Res.png <img width="1718" height="908" alt="W1D2-Logout-Res" src="https://github.com/user-attachments/assets/7be67328-bb7d-414d-9d04-30729839199b" />
 
 
 ## 关键发现 (Key Findings)
