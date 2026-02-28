@@ -15,7 +15,7 @@
 
 ## Quick Verification (60s)
 
-1. 打开报告：`deliverables/auth-session-login-vs-logout.md`
+1. 打开报告：[deliverables/auth-session-login-vs-logout.md](deliverables/auth-session-login-vs-logout.md)
 2. 按报告里的 Evidence 链接查看 Req/Res 与截图证据
 3. 按 Reproduce 步骤复现：登录建立会话、注销使会话失效
 
