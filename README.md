@@ -35,7 +35,7 @@
 
 ## Conventions (Repo rules)
 
-- 证据命名：`W<week>-<topic>-<Req|Res>-<desc>.png`（或保持你当前的命名体系，但要统一）
+- 证据命名：W{week}D{day}-{topic}-{Req|Res}-{desc}.png
 - 每个主题至少包含：
   - Steps（复现步骤）
   - Evidence（Req/Res + 截图）
