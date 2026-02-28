@@ -4,9 +4,9 @@
 本报告验证：DVWA 登录会建立有效会话（后续请求携带会话 Cookie 后可访问受限模块），注销会使会话失效（注销后再访问同一模块会回到登录态）。结论基于 Req/Res 成对证据。
 
 ## Evidence (Req/Res)
-- A1 Login Request (Burp): [W1D1-Login-Req.png]<img width="1718" height="908" alt="554791291-5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" src="https://github.com/user-attachments/assets/720b463f-3714-4204-9fa4-cacb1b5925da" />
+- A1 Login Request (Burp): [W1D1-Login-Req-Low.png]<img width="1718" height="908" alt="554791291-5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" src="https://github.com/user-attachments/assets/720b463f-3714-4204-9fa4-cacb1b5925da" />
 
-- A2 Login Result (Browser): [W1D1-Login-Res.png]<img width="1718" height="908" alt="554791397-d6de3d3c-b003-4855-abe7-1cc19beb83aa" src="https://github.com/user-attachments/assets/4fc26fe1-c7d0-4b0f-b9cf-88a40705b1ab" />
+- A2 Login Result (Browser): [W1D1-Login-Res-Low.png]<img width="1718" height="908" alt="554791397-d6de3d3c-b003-4855-abe7-1cc19beb83aa" src="https://github.com/user-attachments/assets/4fc26fe1-c7d0-4b0f-b9cf-88a40705b1ab" />
 
 - A3 Logout Request (Burp): [W1D2-Logout-Req.png]<img width="1718" height="908" alt="555245927-27e44433-59d2-40f9-a84d-abaf5e269941" src="https://github.com/user-attachments/assets/6dbbc845-3339-424f-98ef-fb96a58a8b73" />
 
