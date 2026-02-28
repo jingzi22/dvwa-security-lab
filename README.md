@@ -35,7 +35,9 @@
 
 ## Conventions (Repo rules)
 
-- 证据命名：W{week}D{day}-{topic}-{Req|Res}-{desc}.png
+- 证据命名示例：`W1D1-Login-Req-Low.png`
+- 推荐模式：`W{week}D{day}-{topic}-{Req|Res}-{desc}.png`
+
 - 每个主题至少包含：
   - Steps（复现步骤）
   - Evidence（Req/Res + 截图）
