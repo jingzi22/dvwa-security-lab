@@ -1,7 +1,7 @@
 ## 今日目标
 总结 DVWA “登录 vs 注销”差异，形成可验收结论（200–300 字），并绑定证据文件名。
 
-## 证据引用（【留痕】）
+## 证据引用
  登录请求：`W1D1-Login-Req.png`
 <img width="1718" height="908" alt="W1D1-Login-Req-Low" src="https://github.com/user-attachments/assets/8c855dd2-896f-4ddd-af1e-8fa8e2f50126" />
 
@@ -11,7 +11,7 @@
 
  注销后未登录态页面：`W1D2-Logout-Res.png`<img width="1718" height="908" alt="555245937-7be67328-bb7d-414d-9d04-30729839199b" src="https://github.com/user-attachments/assets/40d3d47c-9ffa-4ec7-9fe0-6b534a1786e3" />
 
-## 结论（200–300字）
+## 结论
 登录与注销的本质差异是“会话/登录态是否有效”。
 登录时客户端向登录接口提交账号密码参数（见 `W1D1-Login-Req.png`），
 服务端在响应中下发/更新会话标识（如 `Set-Cookie` 或会话 Cookie 变化），
