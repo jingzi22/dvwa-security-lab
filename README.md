@@ -7,7 +7,7 @@
 ## Start here (Deliverables)
 
 - ✅ Auth Session Analysis (Login vs Logout)  
-  - Report: `deliverables/auth-session-login-vs-logout.md`
+   - Report: [deliverables/auth-session-login-vs-logout.md](deliverables/auth-session-login-vs-logout.md)
 
 > 如果只看最终成果：从 deliverables 进入即可。
 
@@ -25,11 +25,11 @@
 
 > notes 目录存放过程记录与证据材料（截图/要点/实验细节）。
 
-- `notes/01-env-login/`：环境初始化 & 登录请求链路
-- `notes/02-logout/`：注销请求链路 & 会话失效验证
-- `notes/03-burp-repeater-ua/`：Burp Repeater / User-Agent 等基础操作记录
-- `notes/04-security-level-medium/`：DVWA Security Level 调整与 Cookie/配置验证
-- `notes/05-auth-session-analysis/`：登录 vs 注销的会话对比分析（支撑 deliverable）
+- [notes/01-env-login/](notes/01-env-login/)：环境初始化 & 登录请求链路
+- [notes/02-logout/](notes/02-logout/)：注销请求链路 & 会话失效验证
+- [notes/03-burp-repeater-ua/](notes/03-burp-repeater-ua/)：Burp Repeater / UA 操作记录
+- [notes/04-security-level-medium/](notes/04-security-level-medium/)：Security Level 调整验证
+- [notes/05-auth-session-analysis/](notes/05-auth-session-analysis/)：会话对比分析
 
 ---
 
