@@ -1,4 +1,4 @@
-## 目标 (Objective)
+<img width="1718" height="908" alt="image" src="https://github.com/user-attachments/assets/7a3e0533-2c5c-4061-acbb-2119163a0c84" />## 目标 (Objective)
 完成 Burp 代理配置，捕获注销（Logout）请求并验证注销后的页面状态。
 
 ## 操作步骤 (Steps)
@@ -12,6 +12,8 @@
 - W1D2-Logout-Req.png <img width="1718" height="908" alt="W1D2-Logout-Req" src="https://github.com/user-attachments/assets/27e44433-59d2-40f9-a84d-abaf5e269941" />
 
 - W1D2-Logout-Res.png <img width="1718" height="908" alt="W1D2-Logout-Res" src="https://github.com/user-attachments/assets/7be67328-bb7d-414d-9d04-30729839199b" />
+-W1D2-After-Logout-Access-Denied.png<img width="1718" height="908" alt="ad2e612d-7314-47df-bece-d1353cc133fc" src="https://github.com/user-attachments/assets/11c64ac6-9655-4150-81cf-98bd60c11d5a" />
+
 
 
 ## 关键发现 (Key Findings)
