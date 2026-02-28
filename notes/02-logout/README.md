@@ -19,9 +19,20 @@
 
 
 ## 关键发现 (Key Findings)
-- 注销请求多为 GET/POST 方式（视 DVWA 版本而定）
-- 注销后 Cookie 中的登录态失效
-- 响应状态码多为 200/302，页面跳转至登录页
+
+- Logout method: **GET**
+- Endpoint: **/dvwa/logout.php**
+- Request highlights:
+  - Cookie sent: **PHPSESSID=<redacted>; security=low**
+- Response highlights:
+  - Status code: **302**
+  - Location -> **/dvwa/login.php**（注销后重定向回登录态/登录页）
+  - Set-Cookie change (if any): **可能不显式清空 Cookie，但服务端会话已失效**（表现为后续访问需要重新登录）
+
+- Post-logout verification (Closed loop):
+  - Without re-login, access **/dvwa/security.php** -> **back to login state / redirected**
+  - Evidence: **W1D2-After-Logout-Access-Denied.png**
+
 
 ## 待研究问题 (Questions)
 - 注销操作是否清除服务端 Session？
