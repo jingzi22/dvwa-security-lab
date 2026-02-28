@@ -17,7 +17,8 @@
 
 ### Post-Logout Verification (Required)
 - A5 After logout, access protected module again (e.g., security.php) -> back to login state:
-  - [W1D2-After-Logout-Access-Denied.png](../notes/02-logout/W1D2-After-Logout-Access-Denied.png)
+  - - [W1D2-After-Logout-Access-Denied.png](https://github.com/user-attachments/assets/11c64ac6-9655-4150-81cf-98bd60c11d5a)
+
 
 ---
 
