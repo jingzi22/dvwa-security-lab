@@ -8,7 +8,8 @@
 
 - ✅ Auth Session Analysis (Login vs Logout)  
    - Report: [deliverables/auth-session-login-vs-logout.md](deliverables/auth-session-login-vs-logout.md)
-
+- ✅ Traffic Manipulation Audit (Headers & Cookies)
+  - Report: [deliverables/traffic-manipulation-report.md](deliverables/traffic-manipulation-report.md)
 > 如果只看最终成果：从 deliverables 进入即可。
 
 ---
