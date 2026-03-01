@@ -9,15 +9,19 @@
 
 ### Login
 - A1 Login Request (Burp)
-![](../notes/01-env-login/W1D1-Login-Req-Low.png)
+<img width="1718" height="908" alt="554791291-5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" src="https://github.com/user-attachments/assets/c10c0acc-da65-4cfc-a2a9-1b931facbeb0" />
+
 - A2 Login Result (Browser)
-![](../notes/01-env-login/W1D1-Login-Res-Home.png)
+<img width="1718" height="908" alt="554791254-ab3d3d6e-6914-4420-b2e0-e16cb2f26c90" src="https://github.com/user-attachments/assets/36d2d306-12be-4e6e-8989-49510974d2bb" />
+
 
 ### Logout
 - A3 Logout Request (Burp)
-![](../notes/02-logout/W1D2-Logout-Req.png)
+<img width="1718" height="908" alt="555245927-27e44433-59d2-40f9-a84d-abaf5e269941" src="https://github.com/user-attachments/assets/f6ac741e-1833-4a27-8340-6319ab057c85" />
+
 - A4 Logout Result (Browser)
-![](../notes/02-logout/W1D2-Logout-Res.png)
+<img width="1718" height="908" alt="ad2e612d-7314-47df-bece-d1353cc133fc" src="https://github.com/user-attachments/assets/21a3ed1f-7850-4009-8b8b-a1a332c15d8e" />
+
 
 ### Post-Logout Verification (Required)
 - A5 After logout, access protected module again (e.g., security.php) -> back to login state:
