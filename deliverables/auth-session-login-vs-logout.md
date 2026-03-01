@@ -8,12 +8,16 @@
 ## Evidence (Req/Res)
 
 ### Login
-- A1 Login Request (Burp): [W1D1-Login-Req-Low.png](../notes/01-env-login/W1D1-Login-Req-Low.png)
-- A2 Login Result (Browser): [W1D1-Login-Res-Home.png](../notes/01-env-login/W1D1-Login-Res-Home.png)
+- A1 Login Request (Burp)
+![](../notes/01-env-login/W1D1-Login-Req-Low.png)
+- A2 Login Result (Browser)
+![](../notes/01-env-login/W1D1-Login-Res-Home.png)
 
 ### Logout
-- A3 Logout Request (Burp): [W1D2-Logout-Req.png](../notes/02-logout/W1D2-Logout-Req.png)
-- A4 Logout Result (Browser): [W1D2-Logout-Res.png](../notes/02-logout/W1D2-Logout-Res.png)
+- A3 Logout Request (Burp)
+![](../notes/02-logout/W1D2-Logout-Req.png)
+- A4 Logout Result (Browser)
+![](../notes/02-logout/W1D2-Logout-Res.png)
 
 ### Post-Logout Verification (Required)
 - A5 After logout, access protected module again (e.g., security.php) -> back to login state:
