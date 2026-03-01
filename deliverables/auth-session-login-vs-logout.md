@@ -12,8 +12,7 @@
 <img width="1718" height="908" alt="554791291-5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" src="https://github.com/user-attachments/assets/c10c0acc-da65-4cfc-a2a9-1b931facbeb0" />
 
 - A2 Login Result (Browser)
-<img width="1718" height="908" alt="554791254-ab3d3d6e-6914-4420-b2e0-e16cb2f26c90" src="https://github.com/user-attachments/assets/36d2d306-12be-4e6e-8989-49510974d2bb" />
-
+<img width="1718" height="908" alt="554791397-d6de3d3c-b003-4855-abe7-1cc19beb83aa" src="https://github.com/user-attachments/assets/8c71ac34-3fe5-4bf4-aeb7-98fb420fb7a4" />
 
 ### Logout
 - A3 Logout Request (Burp)
