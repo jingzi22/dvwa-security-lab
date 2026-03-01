@@ -13,26 +13,24 @@
 
 - **T1 - UA 篡改请求 (Request)**:
   > 在 Repeater 中将 User-Agent 修改为 `Hello-Hacker` 并发送。
-  
-  ![UA Modified Request](../notes/02_Traffic_Manipulation/W1D3-UA-Modified-Repeater.png)
+  <img width="659" height="914" alt="555275272-81d71bb2-f2c2-4f90-98bc-4dce996c327b" src="https://github.com/user-attachments/assets/c9fc180e-e3e6-491d-b214-b4eeed5916de" />
+
 
 - **T2 - 服务端响应 (Response)**:
   > 服务端返回 `200 OK`，正常响应页面内容，证明未对非标准 UA 进行拦截或过滤。
-  
-  ![UA Server Response](../notes/02_Traffic_Manipulation/W1D3-UA-Response.png)
+  <img width="902" height="786" alt="555275304-74e81a8f-397b-4905-b753-07e49a3f16be" src="https://github.com/user-attachments/assets/4cef6ed2-b444-45be-b4b2-fdadfc062e68" />
 
 ### 2. 安全等级逻辑绕过 (Cookie Manipulation)
 **测试目标**：验证是否可以通过修改 Cookie 强制变更系统的安全等级。
 
 - **T3 - 低安全等级指纹 (Low Level)**:
   > 抓包显示当前 Cookie 为 `security=low`。此时系统不过滤任何输入。
-  
-  ![Cookie Security Low](../notes/02_Traffic_Manipulation/W1D4-Cookie-Low.png)
+  <img width="1718" height="908" alt="554791291-5c2b2ed8-b2f2-49f4-b9af-ca13c5553a3e" src="https://github.com/user-attachments/assets/c83458f1-954a-4b7b-8c8c-07c5a4aae770" />
 
-- **T4 - 等级参数篡改 (Medium Level)**:
-  > 直接在请求包中将 Cookie 修改为 `security=medium`。系统逻辑随即切换至中级防御模式（如增加 `mysqli_real_escape_string`），证明安全逻辑由客户端参数直接驱动，存在逻辑漏洞。
-  
-  ![Cookie Security Medium](../notes/02_Traffic_Manipulation/W1D4-Cookie-Medium.png)
+- **T4 - 安全等级 Cookie 验证 (Cookie Analysis)**:
+  > 通过 Web 界面切换安全等级至 Medium，抓取后续请求发现 Cookie 中的 `security` 参数值已同步变为 `medium`。
+  > **分析结论**：证实系统通过客户端 Cookie (`security=low/medium/high`) 来标记当前会话的安全防御等级。
+  <img width="1718" height="908" alt="555791603-4d426fd6-1655-4519-975b-02e702139f60" src="https://github.com/user-attachments/assets/74430399-0af0-4ce0-9a3e-0c9c3a1146db" />
 
 ---
 
