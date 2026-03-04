@@ -1,46 +1,142 @@
-# DVWA Security Lab (Evidence-driven)
+# Web 应用安全测试与标准化报告输出实践（DVWA Lab）
 
-本仓库记录基于 DVWA 的 Web 安全练习，按“真实交付”标准整理：每个主题包含 **复现步骤、Req/Res 证据链、结论与验证口径**。
-
----
-
-## Start here (Deliverables)
-
-- ✅ Auth Session Analysis (Login vs Logout)  
-   - Report: [deliverables/auth-session-login-vs-logout.md](deliverables/auth-session-login-vs-logout.md)
-- ✅ Traffic Manipulation Audit (Headers & Cookies)
-  - Report: [deliverables/traffic-manipulation-report.md](deliverables/traffic-manipulation-report.md)
-> 如果只看最终成果：从 deliverables 进入即可。
+> 模拟企业级 Web 应用安全测试流程，完成漏洞验证、风险评估与标准化报告输出的完整实践。
 
 ---
 
-## Quick Verification (60s)
+## 一、项目背景
 
-1. 打开报告：[deliverables/auth-session-login-vs-logout.md](deliverables/auth-session-login-vs-logout.md)
-2. 按报告里的 Evidence 链接查看 Req/Res 与截图证据
-3. 按 Reproduce 步骤复现：登录建立会话、注销使会话失效
+为提升自身在安全服务工程师岗位中的实战能力，基于 DVWA 靶场环境，
+模拟真实企业 Web 应用安全测试流程，完成从漏洞验证到标准化交付报告的全流程实践。
 
----
+本项目重点训练：
 
-## Notes (Evidence & Process)
-
-> notes 目录存放过程记录与证据材料（截图/要点/实验细节）。
-
-- [notes/01-env-login/](notes/01-env-login/)：环境初始化 & 登录请求链路
-- [notes/02-logout/](notes/02-logout/)：注销请求链路 & 会话失效验证
-- [notes/03-burp-repeater-ua/](notes/03-burp-repeater-ua/)：Burp Repeater / UA 操作记录
-- [notes/04-security-level-medium/](notes/04-security-level-medium/)：Security Level 调整验证
-- [notes/05-auth-session-analysis/](notes/05-auth-session-analysis/)：会话对比分析
+- Web 常见漏洞复现能力
+- Burp Suite 实战使用能力
+- 风险分析与修复建议输出能力
+- 标准化测试报告撰写能力
 
 ---
 
-## Conventions (Repo rules)
+## 二、测试环境
 
-- 证据命名示例：`W1D1-Login-Req-Low.png`
-- 推荐模式：`W{week}D{day}-{topic}-{Req|Res}-{desc}.png`
+- 靶场环境：DVWA
+- 测试系统：Kali Linux
+- 测试工具：
+  - Burp Suite（Proxy / Repeater / Intruder）
+  - SQLmap
+  - 浏览器开发者工具
+  - Python（简单自动化验证脚本）
 
-- 每个主题至少包含：
-  - Steps（复现步骤）
-  - Evidence（Req/Res + 截图）
-  - Conclusion（200–300 字）
-  - Reproduce（验证口径/检查点）
+---
+
+## 三、测试范围
+
+本次测试覆盖以下核心 Web 安全模块：
+
+- 登录与 Session 会话安全
+- SQL 注入漏洞
+- XSS 跨站脚本漏洞
+- 文件上传漏洞
+
+---
+
+## 四、标准化交付成果
+
+### 1️⃣ 登录 / Session 安全分析报告
+📄 deliverables/session-report.md
+
+内容包含：
+- 会话机制分析
+- 登录/注销流程验证
+- HTTP 报文抓包证据
+- 风险点分析与修复建议
+
+---
+
+### 2️⃣ SQL 注入漏洞分析报告
+📄 deliverables/sqli-report.md
+
+内容包含：
+- 手工注入复现过程
+- 请求响应证据链
+- 漏洞原理说明
+- 风险影响分析
+- 修复建议与复测标准
+
+---
+
+### 3️⃣ XSS 漏洞分析报告
+📄 deliverables/xss-report.md
+
+内容包含：
+- 反射型 XSS 复现
+- Payload 分析
+- 浏览器执行机制说明
+- 修复建议
+
+---
+
+### 4️⃣ 文件上传漏洞分析报告
+📄 deliverables/upload-report.md
+
+内容包含：
+- 绕过方式验证
+- 文件类型检测分析
+- 风险等级说明
+- 安全加固建议
+
+---
+
+## 五、测试流程说明
+
+本项目按照企业级渗透测试标准流程执行：
+
+信息收集  
+↓  
+漏洞验证  
+↓  
+风险分析  
+↓  
+修复建议输出  
+↓  
+复测确认  
+
+（此处可插入流程图截图）
+
+---
+
+## 六、能力沉淀与收获
+
+通过本项目实践，具备以下能力：
+
+- 独立完成单站点 Web 安全测试
+- 使用 Burp Suite 进行抓包与漏洞验证
+- 输出结构化漏洞分析报告
+- 制定可落地的修复方案
+- 建立测试→分析→修复→复测的闭环流程
+
+---
+
+## 七、项目目录结构
+
+```
+dvwa-security-lab/
+│
+├── notes/               # 测试过程记录与证据截图
+├── deliverables/        # 标准化渗透测试报告
+├── README.md            # 项目说明
+```
+
+---
+
+## 八、持续优化方向
+
+- 增加更多 OWASP Top 10 漏洞实践
+- 深入研究漏洞绕过方式
+- 提升自动化测试能力
+- 优化报告模板结构
+
+---
+
+> 本项目为个人安全测试能力训练用途，仅用于合法授权环境。
