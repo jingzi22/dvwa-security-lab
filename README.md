@@ -1,142 +1,20 @@
-# Web 应用安全测试与标准化报告输出实践（DVWA Lab）
+# Web 应用安全测试与标准化交付（DVWA Lab）
 
-> 模拟企业级 Web 应用安全测试流程，完成漏洞验证、风险评估与标准化报告输出的完整实践。
+> 60s 快速验收：本仓库为企业级单站点渗透测试实战成果，包含 3 个标准化漏洞报告（SQLi / XSS / Upload），共计 5 组 Req/Res 证据对，可作为简历项目展示与面试讲解素材。
 
----
+## Quick facts
+- Target: DVWA靶场（local）
+- Deliverables: 3 × standardized reports (`deliverables/`)
+- Evidence: 5 × Req/Res pairs in `notes/`  
+- Test tools: Burp Suite (Proxy/Repeater/Intruder), sqlmap, Python scripts
 
-## 一、项目背景
+## 目录（快速跳转）
+- `deliverables/` — 对外标准化报告（可直接交付）
+  - `sqli-report.md` | `xss-report.md` | `upload-report.md`
+- `notes/` — 证据层（仅保留可复现 Req/Res 对）
+  - `sqli-evidence.md` | `xss-evidence.md` | `upload-evidence.md`
+- `assets/` — 流程图与截图
 
-为提升自身在安全服务工程师岗位中的实战能力，基于 DVWA 靶场环境，
-模拟真实企业 Web 应用安全测试流程，完成从漏洞验证到标准化交付报告的全流程实践。
+![Testing workflow](assets/flowchart.png)
 
-本项目重点训练：
-
-- Web 常见漏洞复现能力
-- Burp Suite 实战使用能力
-- 风险分析与修复建议输出能力
-- 标准化测试报告撰写能力
-
----
-
-## 二、测试环境
-
-- 靶场环境：DVWA
-- 测试系统：Kali Linux
-- 测试工具：
-  - Burp Suite（Proxy / Repeater / Intruder）
-  - SQLmap
-  - 浏览器开发者工具
-  - Python（简单自动化验证脚本）
-
----
-
-## 三、测试范围
-
-本次测试覆盖以下核心 Web 安全模块：
-
-- 登录与 Session 会话安全
-- SQL 注入漏洞
-- XSS 跨站脚本漏洞
-- 文件上传漏洞
-
----
-
-## 四、标准化交付成果
-
-### 1️⃣ 登录 / Session 安全分析报告
-📄 deliverables/session-report.md
-
-内容包含：
-- 会话机制分析
-- 登录/注销流程验证
-- HTTP 报文抓包证据
-- 风险点分析与修复建议
-
----
-
-### 2️⃣ SQL 注入漏洞分析报告
-📄 deliverables/sqli-report.md
-
-内容包含：
-- 手工注入复现过程
-- 请求响应证据链
-- 漏洞原理说明
-- 风险影响分析
-- 修复建议与复测标准
-
----
-
-### 3️⃣ XSS 漏洞分析报告
-📄 deliverables/xss-report.md
-
-内容包含：
-- 反射型 XSS 复现
-- Payload 分析
-- 浏览器执行机制说明
-- 修复建议
-
----
-
-### 4️⃣ 文件上传漏洞分析报告
-📄 deliverables/upload-report.md
-
-内容包含：
-- 绕过方式验证
-- 文件类型检测分析
-- 风险等级说明
-- 安全加固建议
-
----
-
-## 五、测试流程说明
-
-本项目按照企业级渗透测试标准流程执行：
-
-信息收集  
-↓  
-漏洞验证  
-↓  
-风险分析  
-↓  
-修复建议输出  
-↓  
-复测确认  
-
-（此处可插入流程图截图）
-
----
-
-## 六、能力沉淀与收获
-
-通过本项目实践，具备以下能力：
-
-- 独立完成单站点 Web 安全测试
-- 使用 Burp Suite 进行抓包与漏洞验证
-- 输出结构化漏洞分析报告
-- 制定可落地的修复方案
-- 建立测试→分析→修复→复测的闭环流程
-
----
-
-## 七、项目目录结构
-
-```
-dvwa-security-lab/
-│
-├── notes/               # 测试过程记录与证据截图
-├── deliverables/        # 标准化渗透测试报告
-├── README.md            # 项目说明
-```
-
----
-
-## 八、持续优化方向
-
-- 增加更多 OWASP Top 10 漏洞实践
-- 深入研究漏洞绕过方式
-- 提升自动化测试能力
-- 优化报告模板结构
-
----
-
-> 本项目为个人安全测试能力训练用途，仅用于合法授权环境。
+> 本项目仅用于授权测试与学习，禁止未授权攻击。
